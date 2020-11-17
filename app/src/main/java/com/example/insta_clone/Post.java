@@ -33,7 +33,7 @@ public class Post extends ParseObject {
     {
         return getParseUser(KEY_USER);
     }
-    public void putUser(ParseUser parseUser)
+    public void setUser(ParseUser parseUser)
     {
         put(KEY_USER,parseUser);
     }
