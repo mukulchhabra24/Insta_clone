@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public File photoFile;
     public String photoFileName = "photo.jpg";
     public static final String TAG = "MainActivity";
+    Button Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
         takePic=findViewById(R.id.btnTakePic);
         pic=findViewById(R.id.ivPic);
         submit= findViewById(R.id.btnSubmit);
+        Logout=findViewById(R.id.btnLogout);
+
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ParseUser.logOut();
+                ParseUser currentUser = ParseUser.getCurrentUser();
+                Intent i= new Intent(MainActivity.this,loginActivity.class);
+                startActivity(i);
+            }
+        });
 
         takePic.setOnClickListener(new View.OnClickListener() {
             @Override
