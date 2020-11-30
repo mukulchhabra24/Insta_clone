@@ -1,23 +1,30 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Insta_Clone*
 
-**Name of your app** is a photo sharing app similar to Instagram but using Parse as its backend.
+**Insta_Clone** is a photo sharing app similar to Instagram but using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [X] User can sign up to create a new account using Parse authentication.
-- [X] User can log in and log out of his or her account.
-- [X] The current signed in user is persisted across app restarts.
-- [X] User can take a photo, add a caption, and post it to "Instagram".
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram".
 
 The following **optional** features are implemented:
 
 - [ ] User sees app icon in home screen and styled bottom navigation view
 - [ ] Style the feed to look like the real Instagram feed.
-- [ ] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+- [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
+- [ ] Show the username and creation time for each post.
+- [ ] User can tap a post to view post details, including timestamp and caption.
+- [ ] User Profiles
+      - [ ] Allow the logged in user to add a profile photo
+      - [ ] Display the profile photo with each post
+      - [ ] Tapping on a post's username or profile photo goes to that user's profile page and shows a grid view of the user's posts 
+- [ ] User can comment on a post and see all comments for each post in the post details screen.
+- [ ] User can like a post and see number of likes for each post in the post details screen.
 
 The following **additional** features are implemented:
 
@@ -27,39 +34,25 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-Login to the app:
+The Home tab shows the past 20 posts uploaded to instagram by any user
+
+<img src='https://media.giphy.com/media/h9itsE78jH4Q7aDDh1/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
-<img src='https://media.giphy.com/media/2GnLaFMnm3owi9AxiZ/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+The Compose tab takes us to the compose activity where you can upload a post.
 
 
-Open camera:
+<img src='https://media.giphy.com/media/NPBSXFONpd3qV4wbSs/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
-<img src='https://media.giphy.com/media/R0uTXSDOz7N0YjLkSl/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+The Profile tab only shows you posts form the user that is logged in.
+
+<img src='https://media.giphy.com/media/vodxhjSvYFEJkzxvQ3/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
-Upload Picture:
+The swipe down to refresh functionality reloads the past 20 posts.
 
-<img src='https://media.giphy.com/media/waZra4cLFbAoMojv6B/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-Upload post and clear all fields:
-
-
-<img src='https://media.giphy.com/media/aWYtMKmZYnSHIod4tz/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-
-The login persists:
-
-
-<img src='https://media.giphy.com/media/eOInqRON8h69ZuJv75/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-
-The logout returns you to the login screen:
-
-<img src='https://media.giphy.com/media/UboTRRwvu0Y8Mrq4Up/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-
+<img src='https://media.giphy.com/media/EMtBDTyvNnEG67tg3d/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
